@@ -7,16 +7,16 @@ public class Program
         long numIter = 0;
         long divBy = 2;
         double val = (new Scanner(System.in)).nextDouble();
-        long valInt = (long)val;
-        if(valInt <= 1)
+        long valLong = (long)val;
+        if(valLong <= 1)
         {
             System.err.println("IllegalArgument");
             System.exit(-1);
         }
-        while((valInt/ (divBy - 1)) >= divBy)
+        while((valLong/ (divBy - 1)) >= divBy)
         {
             numIter++;
-            if(valInt% divBy == 0) {
+            if(valLong% divBy == 0) {
                 System.out.println("false " + numIter);
                 System.exit(0);
             }
