@@ -27,12 +27,12 @@ public class Program
                 res += k % 10;
                 k /= 10;
             }
-            System.out.println("res: " + res);
+//            System.out.println("res: " + res);
 
             boolean isNotPrime = false;
             while((res/ (divBy - 1)) >= divBy)
             {
-                if(res% divBy == 0) {
+                if(res% divBy == 0 && res != divBy) {
                     isNotPrime = true;
                     break;
                 }

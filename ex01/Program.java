@@ -16,7 +16,7 @@ public class Program
         while((valLong/ (divBy - 1)) >= divBy)
         {
             numIter++;
-            if(valLong% divBy == 0) {
+            if(valLong% divBy == 0 && valLong != divBy) {
                 System.out.println("false " + numIter);
                 System.exit(0);
             }
